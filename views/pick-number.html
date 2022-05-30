@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotters - Lottery & Raffle System HTML Template</title><!-- favicon -->
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="http://cdn.bootstrapmb.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!-- fontawesome icon  -->
+    <link rel="stylesheet" href="../public/assets/css/fontawesome.min.css"><!-- flaticon css -->
+    <link rel="stylesheet" href="../public/assets/fonts/flaticon.css"><!-- animate.css -->
+    <link rel="stylesheet" href="../public/assets/css/animate.css"><!-- Owl Carousel -->
+    <link rel="stylesheet" href="../public/assets/css/owl.carousel.css"><!-- magnific popup -->
+    <link rel="stylesheet" href="../public/assets/css/modal-video.min.css"><!-- flags css -->
+    <link rel="stylesheet" href="../public/assets/css/flags.css"><!-- vector map css -->
+    <link rel="stylesheet" href="../public/assets/css/jquery-jvectormap-2.0.3.css"><!-- scrollbar -->
+    <link rel="stylesheet" href="../public/assets/css/simple-scrollbar.css"><!-- stylesheet -->
+    <link rel="stylesheet" href="../public/assets/css/style.css"><!-- responsive -->
+    <link rel="stylesheet" href="../public/assets/css/responsive.css">
+</head>
+
+<body>
+    <!-- preloader begin -->
+    <div class="preloader">
+        <div id="nest1"></div>
+    </div><!-- preloader end -->
+    <!-- header begin -->
+    <div class="header style-2">
+        <div class="topbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 d-xl-flex d-lg-flex d-block align-items-center">
+                        <div class="support-area">
+                            <ul>
+                                <li><span class="icon"><i class="fas fa-headphones-alt"></i></span> +00 564 834 58</li>
+                                <li><span class="icon"><i class="far fa-envelope"></i></span> support24@gmail.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="select-lang">
+                            <div id="demo" data-input-name="country" data-selected-country="US"
+                                data-scrollable-height="250px"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="menu-bar">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 d-xl-flex d-lg-flex d-block align-items-center">
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-7">
+                                <div class="logo"><a href="/"><img id="logo-2" src="../public/assets/img/logo-2.png"
+                                            alt=""></a></div>
+                            </div>
+                            <div class="d-xl-none d-lg-none d-block col-5"><button class="navbar-toggler" type="button"
+                                    data-toggle="collapse" data-target="#navbarSupportedContent"
+                                    aria-controls="navbarSupportedContent" aria-expanded="false"
+                                    aria-label="Toggle navigation"></button></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-9 for-lottery">
+                        <div class="mainmenu">
+                            <nav class="navbar navbar-expand-lg for-lottery">
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav ml-auto">
+                                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#"
+                                                id="homepage" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">Home</a>
+                                            <div class="dropdown-menu" aria-labelledby="homepage"><a
+                                                    class="dropdown-item" href="/">Home One</a>
+                                        </li>
+                                        <li class="nav-item dropdown for-lottery-btn"><a
+                                                class="nav-link dropdown-toggle" href="#" id="all-lotteries"
+                                                role="button" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false"> In-Play</a>
+                                            <div class="dropdown-menu for-specific"><a class="dropdown-item"
+                                                    href="#">Action</a><a class="dropdown-item" href="#">Another
+                                                    action</a><a class="dropdown-item" href="#">Something else here</a>
+                                            </div>
+                                            <div class="all-lotteries d-xl-block d-lg-block d-none">
+                                                <div class="single-lottery">
+                                                    <h3 class="title">EuroMillions</h3>
+                                                    <div class="part-icon"><img src="../public/assets/img/svg/euro-million.png"
+                                                            alt=""></div><a href="/admin/pick">Play Game</a>
+                                                    <div class="draw-time">
+                                                        <ul class="date-counter timer"
+                                                            data-date="30 November 2019 9:56:00 GMT+01:00">
+                                                            <li><span class="number day">15</span><span
+                                                                    class="text">Day</span></li>
+                                                            <li><span class="number hour">15</span><span
+                                                                    class="text">Hou</span></li>
+                                                            <li><span class="number minute">25</span><span
+                                                                    class="text">Min</span></li>
+                                                            <li><span class="number second">35</span><span
+                                                                    class="text">Sec</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="single-lottery">
+                                                    <h3 class="title">EuroJackpot</h3>
+                                                    <div class="part-icon"><img src="../public/assets/img/svg/euro-jackpot.png"
+                                                            alt=""></div><a href="/admin/pick">Play Game</a>
+                                                    <div class="draw-time">
+                                                        <ul class="date-counter timer"
+                                                            data-date="30 November 2019 9:56:00 GMT+01:00">
+                                                            <li><span class="number day">15</span><span
+                                                                    class="text">Day</span></li>
+                                                            <li><span class="number hour">15</span><span
+                                                                    class="text">Hou</span></li>
+                                                            <li><span class="number minute">25</span><span
+                                                                    class="text">Min</span></li>
+                                                            <li><span class="number second">35</span><span
+                                                                    class="text">Sec</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="single-lottery">
+                                                    <h3 class="title">Powerball</h3>
+                                                    <div class="part-icon"><img src="../public/assets/img/svg/powerball.png"
+                                                            alt=""></div><a href="/admin/pick">Play Game</a>
+                                                    <div class="draw-time">
+                                                        <ul class="date-counter timer"
+                                                            data-date="30 November 2019 9:56:00 GMT+01:00">
+                                                            <li><span class="number day">15</span><span
+                                                                    class="text">Day</span></li>
+                                                            <li><span class="number hour">15</span><span
+                                                                    class="text">Hou</span></li>
+                                                            <li><span class="number minute">25</span><span
+                                                                    class="text">Min</span></li>
+                                                            <li><span class="number second">35</span><span
+                                                                    class="text">Sec</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="single-lottery">
+                                                    <h3 class="title">UK Lottery</h3>
+                                                    <div class="part-icon"><img src="../public/assets/img/svg/uk-lottery.png"
+                                                            alt=""></div><a href="/admin/pick">Play Game</a>
+                                                    <div class="draw-time">
+                                                        <ul class="date-counter timer"
+                                                            data-date="30 November 2019 9:56:00 GMT+01:00">
+                                                            <li><span class="number day">15</span><span
+                                                                    class="text">Day</span></li>
+                                                            <li><span class="number hour">15</span><span
+                                                                    class="text">Hou</span></li>
+                                                            <li><span class="number minute">25</span><span
+                                                                    class="text">Min</span></li>
+                                                            <li><span class="number second">35</span><span
+                                                                    class="text">Sec</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="single-lottery">
+                                                    <h3 class="title">MegaMillions</h3>
+                                                    <div class="part-icon"><img src="../public/assets/img/svg/mega.png" alt="">
+                                                    </div><a href="/admin/pick">Play Game</a>
+                                                    <div class="draw-time">
+                                                        <ul class="date-counter timer"
+                                                            data-date="30 November 2019 9:56:00 GMT+01:00">
+                                                            <li><span class="number day">15</span><span
+                                                                    class="text">Day</span></li>
+                                                            <li><span class="number hour">15</span><span
+                                                                    class="text">Hou</span></li>
+                                                            <li><span class="number minute">25</span><span
+                                                                    class="text">Min</span></li>
+                                                            <li><span class="number second">35</span><span
+                                                                    class="text">Sec</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="single-lottery">
+                                                    <h3 class="title">EnaLotto</h3>
+                                                    <div class="part-icon"><img src="../public/assets/img/svg/enalotto.png"
+                                                            alt=""></div><a href="/admin/pick">Play Game</a>
+                                                    <div class="draw-time">
+                                                        <ul class="date-counter timer"
+                                                            data-date="30 November 2019 9:56:00 GMT+01:00">
+                                                            <li><span class="number day">15</span><span
+                                                                    class="text">Day</span></li>
+                                                            <li><span class="number hour">15</span><span
+                                                                    class="text">Hou</span></li>
+                                                            <li><span class="number minute">25</span><span
+                                                                    class="text">Min</span></li>
+                                                            <li><span class="number second">35</span><span
+                                                                    class="text">Sec</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="lottery-result-menu"><a href="lottery-results.html">See The
+                                                        All Lottery Result</a></div>
+                                            </div>
+                                        </li>
+                                    
+
+
+                                        <li class="nav-item"><a class="nav-link" href="/admin/contact">Contact</a></li>
+                                        <li class="nav-item"><a class="nav-link sign-up" href="/admin/register">Sign
+                                                Up</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- header end -->
+    <!-- breadcrumb begin -->
+    <div class="breadcrumb-lotters">
+        <div class="banner-shape"><img src="../public/assets/img/svg/banner-shape-1.png" alt=""><img
+                src="../public/assets/img/svg/banner-shape-2.png" alt=""></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-lg-6">
+                    <div class="breadcrumb-content">
+                        <h2>Pick Your Number</h2>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li> Pick Number</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- breadcrumb end -->
+    <!-- lottery details begin -->
+    <div class="lottery-details">
+        <div class="container">
+            <div class="lottery-details-area">
+                <div class="lotto-head">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6 baltus">
+                            <div class="icon"><img src="../public/assets/img/svg/euro-million.png" alt=""></div>
+                            <div class="text">
+                                <h3>Euro Million</h3><span class="amount">$258,467,964</span><span
+                                    class="draw-date">Next Draw : 3 Days 4:21:11</span>
+                            </div>
+                        </div>
+                        <div
+                            class="col-xl-6 col-lg-6 col-md-6 d-xl-flex d-lg-flex d-md-flex d-block align-items-center">
+                            <div class="control-buttons"><button type="submit" class="quick-play">Quick PIck
+                                    All</button><button type="submit" class="circle add"><i
+                                        class="fas fa-plus"></i></button><button type="submit" class="circle remove"><i
+                                        class="fas fa-times"></i></button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lottery-coupon">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3 col-md-6">
+                            <div class="single-coupon">
+                                <div class="coupon-head">
+                                    <h3 class="title">Pick 05 Numbers</h3>
+                                    <div class="buttons"><button class="seed-btn" type="submit" data-lotto="1"
+                                            value="Generate numbers">Quick Pick</button><button class="btn-clear">Clear
+                                            All</button></div>
+                                </div>
+                                <div class="pic-keys">
+                                    <div class="pic-num main"><span data-value="1">1</span><span
+                                            data-value="2">2</span><span data-value="3">3</span><span
+                                            data-value="4">4</span><span data-value="5">5</span><span
+                                            data-value="6">6</span><span data-value="7">7</span><span
+                                            data-value="8">8</span><span data-value="9">9</span><span
+                                            data-value="10">10</span><span data-value="11">11</span><span
+                                            data-value="12">12</span><span data-value="13">13</span><span
+                                            data-value="14">14</span><span data-value="15">15</span><span
+                                            data-value="16">16</span><span data-value="17">17</span><span
+                                            data-value="18">18</span><span data-value="19">19</span><span
+                                            data-value="20">20</span><span data-value="21">21</span><span
+                                            data-value="22">22</span><span data-value="23">23</span><span
+                                            data-value="24">24</span><span data-value="25">25</span><span
+                                            data-value="26">26</span><span data-value="27">27</span><span
+                                            data-value="28">28</span><span data-value="29">29</span><span
+                                            data-value="30">30</span><span data-value="31">31</span><span
+                                            data-value="32">32</span><span data-value="33">33</span><span
+                                            data-value="34">34</span><span data-value="35">35</span><span
+                                            data-value="36">36</span><span data-value="37">37</span><span
+                                            data-value="38">38</span><span data-value="39">39</span><span
+                                            data-value="40">40</span><span data-value="41">41</span><span
+                                            data-value="42">42</span><span data-value="43">43</span><span
+                                            data-value="44">44</span><span data-value="45">45</span><span
+                                            data-value="46">46</span><span data-value="47">47</span><span
+                                            data-value="48">48</span><span data-value="49">49</span><span
+                                            data-value="50">50</span><span data-value="51">51</span><span
+                                            data-value="52">52</span><span data-value="53">53</span><span
+                                            data-value="54">54</span></div>
+                                    <div class="pic-num bonus">
+                                        <!-- <h4 class="pic-bonus-title">Pick 01 Bonus Numbers</h4>--> <span
+                                            data-value="1">1</span><span data-value="2">2</span><span
+                                            data-value="3">3</span><span data-value="4">4</span><span
+                                            data-value="5">5</span><span data-value="6">6</span><span
+                                            data-value="7">7</span><span data-value="8">8</span><span
+                                            data-value="9">9</span><span data-value="10">10</span><span
+                                            data-value="11">11</span><span data-value="12">12</span>
+                                    </div>
+                                </div>
+                                <div class="selected-items"><span class="title">Selected Numbers:</span><span
+                                        class="rdm-seed-45"></span><span class="rdm-seed-20"></span></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6">
+                            <div class="single-coupon">
+                                <div class="coupon-head">
+                                    <h3 class="title">Pick 05 Numbers</h3>
+                                    <div class="buttons"><button class="seed-btn" type="submit" data-lotto="2"
+                                            value="Generate numbers">Quick Pick</button><button class="btn-clear">Clear
+                                            All</button></div>
+                                </div>
+                                <div class="pic-keys">
+                                    <div class="pic-num main"><span data-value="1">1</span><span
+                                            data-value="2">2</span><span data-value="3">3</span><span
+                                            data-value="4">4</span><span data-value="5">5</span><span
+                                            data-value="6">6</span><span data-value="7">7</span><span
+                                            data-value="8">8</span><span data-value="9">9</span><span
+                                            data-value="10">10</span><span data-value="11">11</span><span
+                                            data-value="12">12</span><span data-value="13">13</span><span
+                                            data-value="14">14</span><span data-value="15">15</span><span
+                                            data-value="16">16</span><span data-value="17">17</span><span
+                                            data-value="18">18</span><span data-value="19">19</span><span
+                                            data-value="20">20</span><span data-value="21">21</span><span
+                                            data-value="22">22</span><span data-value="23">23</span><span
+                                            data-value="24">24</span><span data-value="25">25</span><span
+                                            data-value="26">26</span><span data-value="27">27</span><span
+                                            data-value="28">28</span><span data-value="29">29</span><span
+                                            data-value="30">30</span><span data-value="31">31</span><span
+                                            data-value="32">32</span><span data-value="33">33</span><span
+                                            data-value="34">34</span><span data-value="35">35</span><span
+                                            data-value="36">36</span><span data-value="37">37</span><span
+                                            data-value="38">38</span><span data-value="39">39</span><span
+                                            data-value="40">40</span><span data-value="41">41</span><span
+                                            data-value="42">42</span><span data-value="43">43</span><span
+                                            data-value="44">44</span><span data-value="45">45</span><span
+                                            data-value="46">46</span><span data-value="47">47</span><span
+                                            data-value="48">48</span><span data-value="49">49</span><span
+                                            data-value="50">50</span><span data-value="51">51</span><span
+                                            data-value="52">52</span><span data-value="53">53</span><span
+                                            data-value="54">54</span></div>
+                                    <div class="pic-num bonus">
+                                        <!-- <h4 class="pic-bonus-title">Pick 01 Bonus Numbers</h4>--> <span
+                                            data-value="1">1</span><span data-value="2">2</span><span
+                                            data-value="3">3</span><span data-value="4">4</span><span
+                                            data-value="5">5</span><span data-value="6">6</span><span
+                                            data-value="7">7</span><span data-value="8">8</span><span
+                                            data-value="9">9</span><span data-value="10">10</span><span
+                                            data-value="11">11</span><span data-value="12">12</span>
+                                    </div>
+                                </div>
+                                <div class="selected-items"><span class="title">Selected Numbers:</span><span
+                                        class="rdm-seed-45"></span><span class="rdm-seed-20"></span></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6">
+                            <div class="single-coupon">
+                                <div class="coupon-head">
+                                    <h3 class="title">Pick 05 Numbers</h3>
+                                    <div class="buttons"><button class="seed-btn" type="submit" data-lotto="3"
+                                            value="Generate numbers">Quick Pick</button><button class="btn-clear">Clear
+                                            All</button></div>
+                                </div>
+                                <div class="pic-keys">
+                                    <div class="pic-num main"><span data-value="1">1</span><span
+                                            data-value="2">2</span><span data-value="3">3</span><span
+                                            data-value="4">4</span><span data-value="5">5</span><span
+                                            data-value="6">6</span><span data-value="7">7</span><span
+                                            data-value="8">8</span><span data-value="9">9</span><span
+                                            data-value="10">10</span><span data-value="11">11</span><span
+                                            data-value="12">12</span><span data-value="13">13</span><span
+                                            data-value="14">14</span><span data-value="15">15</span><span
+                                            data-value="16">16</span><span data-value="17">17</span><span
+                                            data-value="18">18</span><span data-value="19">19</span><span
+                                            data-value="20">20</span><span data-value="21">21</span><span
+                                            data-value="22">22</span><span data-value="23">23</span><span
+                                            data-value="24">24</span><span data-value="25">25</span><span
+                                            data-value="26">26</span><span data-value="27">27</span><span
+                                            data-value="28">28</span><span data-value="29">29</span><span
+                                            data-value="30">30</span><span data-value="31">31</span><span
+                                            data-value="32">32</span><span data-value="33">33</span><span
+                                            data-value="34">34</span><span data-value="35">35</span><span
+                                            data-value="36">36</span><span data-value="37">37</span><span
+                                            data-value="38">38</span><span data-value="39">39</span><span
+                                            data-value="40">40</span><span data-value="41">41</span><span
+                                            data-value="42">42</span><span data-value="43">43</span><span
+                                            data-value="44">44</span><span data-value="45">45</span><span
+                                            data-value="46">46</span><span data-value="47">47</span><span
+                                            data-value="48">48</span><span data-value="49">49</span><span
+                                            data-value="50">50</span><span data-value="51">51</span><span
+                                            data-value="52">52</span><span data-value="53">53</span><span
+                                            data-value="54">54</span></div>
+                                    <div class="pic-num bonus">
+                                        <!-- <h4 class="pic-bonus-title">Pick 01 Bonus Numbers</h4>--> <span
+                                            data-value="1">1</span><span data-value="2">2</span><span
+                                            data-value="3">3</span><span data-value="4">4</span><span
+                                            data-value="5">5</span><span data-value="6">6</span><span
+                                            data-value="7">7</span><span data-value="8">8</span><span
+                                            data-value="9">9</span><span data-value="10">10</span><span
+                                            data-value="11">11</span><span data-value="12">12</span>
+                                    </div>
+                                </div>
+                                <div class="selected-items"><span class="title">Selected Numbers:</span><span
+                                        class="rdm-seed-45"></span><span class="rdm-seed-20"></span></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6">
+                            <div class="single-coupon">
+                                <div class="coupon-head">
+                                    <h3 class="title">Pick 05 Numbers</h3>
+                                    <div class="buttons"><button class="seed-btn" type="submit" data-lotto="4"
+                                            value="Generate numbers">Quick Pick</button><button class="btn-clear">Clear
+                                            All</button></div>
+                                </div>
+                                <div class="pic-keys">
+                                    <div class="pic-num main"><span data-value="1">1</span><span
+                                            data-value="2">2</span><span data-value="3">3</span><span
+                                            data-value="4">4</span><span data-value="5">5</span><span
+                                            data-value="6">6</span><span data-value="7">7</span><span
+                                            data-value="8">8</span><span data-value="9">9</span><span
+                                            data-value="10">10</span><span data-value="11">11</span><span
+                                            data-value="12">12</span><span data-value="13">13</span><span
+                                            data-value="14">14</span><span data-value="15">15</span><span
+                                            data-value="16">16</span><span data-value="17">17</span><span
+                                            data-value="18">18</span><span data-value="19">19</span><span
+                                            data-value="20">20</span><span data-value="21">21</span><span
+                                            data-value="22">22</span><span data-value="23">23</span><span
+                                            data-value="24">24</span><span data-value="25">25</span><span
+                                            data-value="26">26</span><span data-value="27">27</span><span
+                                            data-value="28">28</span><span data-value="29">29</span><span
+                                            data-value="30">30</span><span data-value="31">31</span><span
+                                            data-value="32">32</span><span data-value="33">33</span><span
+                                            data-value="34">34</span><span data-value="35">35</span><span
+                                            data-value="36">36</span><span data-value="37">37</span><span
+                                            data-value="38">38</span><span data-value="39">39</span><span
+                                            data-value="40">40</span><span data-value="41">41</span><span
+                                            data-value="42">42</span><span data-value="43">43</span><span
+                                            data-value="44">44</span><span data-value="45">45</span><span
+                                            data-value="46">46</span><span data-value="47">47</span><span
+                                            data-value="48">48</span><span data-value="49">49</span><span
+                                            data-value="50">50</span><span data-value="51">51</span><span
+                                            data-value="52">52</span><span data-value="53">53</span><span
+                                            data-value="54">54</span></div>
+                                    <div class="pic-num bonus">
+                                        <!-- <h4 class="pic-bonus-title">Pick 01 Bonus Numbers</h4>--> <span
+                                            data-value="1">1</span><span data-value="2">2</span><span
+                                            data-value="3">3</span><span data-value="4">4</span><span
+                                            data-value="5">5</span><span data-value="6">6</span><span
+                                            data-value="7">7</span><span data-value="8">8</span><span
+                                            data-value="9">9</span><span data-value="10">10</span><span
+                                            data-value="11">11</span><span data-value="12">12</span>
+                                    </div>
+                                </div>
+                                <div class="selected-items"><span class="title">Selected Numbers:</span><span
+                                        class="rdm-seed-45"></span><span class="rdm-seed-20"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12">
+                            <div class="coupon-panel">
+                                <div class="row justify-content-between">
+                                    <div class="col-xl-5 col-lg-5 d-xl-flex d-lg-flex d-block align-items-center">
+                                        <div class="winning-chance">
+                                            <h5 class="title">Winning Chances</h5>
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                                                    aria-valuemin="0" aria-valuemax="100" style="width:70%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6">
+                                        <div class="amount-discuss">
+                                            <div class="left">
+                                                <ul>
+                                                    <li><span class="text">01 Draw with 02 Ticket :</span><span
+                                                            class="details">02 x $568.46</span></li>
+                                                    <li><span class="text">Total Discount :</span><span
+                                                            class="details">$0.00</span></li>
+                                                </ul>
+                                            </div>
+                                            <div class="right"><input type="text" placeholder="$468.76" readonly><button
+                                                    type="submit">Add To Cart</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- lottery details end -->
+    <!-- quick review begin -->
+    <div class="quick-review">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-7 col-lg-7">
+                    <div class="section-title text-center">
+                        <h2>Quick Overview</h2>
+                        <p>Lotters allows you to participate in the world’s biggest lotteries. We give you the
+                            possibility of purchasing lottery tickets in a safe and convenient manner from the comfort
+                            of your home. Let's see the quick reviews.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-lg-4">
+                    <div class="single-jackpot">
+                        <div class="part-head">
+                            <div class="icon"><img src="../public/assets/img/svg/slot-machine.svg" alt=""></div>
+                        </div>
+                        <div class="part-body">
+                            <h3>How to Play</h3>
+                            <p>第 1 步：注册 Lotters。 第 2 步：选择您想玩的彩票。 第 4 步：选择您的号码。 第 5 步：购物车。 第六步：查看抽签结果。</p><a
+                                href="#">Go to Result Page <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4">
+                    <div class="single-jackpot">
+                        <div class="part-head">
+                            <div class="icon"><img src="../public/assets/img/svg/lotto-3.svg" alt=""></div>
+                        </div>
+                        <div class="part-body">
+                            <h3>Why Play With Lotters</h3>
+                            <p>Lotters 是在线获取世界著名国家彩票的最佳服务。 我们为我们所代表的彩票提供一些最低价格。</p><a
+                                href="#">See Price Breakdown <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4">
+                    <div class="single-jackpot">
+                        <div class="part-head">
+                            <div class="icon"><img src="../public/assets/img/svg/document.svg" alt=""></div>
+                        </div>
+                        <div class="part-body">
+                            <h3>When’s the draw?</h3>
+                            <p>我们正在提供最新的彩票开奖。 每次抽奖的结果都会在我们的网站上公布
+                                公布后三小时内在“结果”部分的网站上。</p><a
+                                href="#">Go To FAQ <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- quick review end -->
+    <!-- footer begin -->
+   
+    <!-- copyright begin -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-lg-8">
+                    <p>Copyright © 2019; All Right <a href="http://www.bootstrapmb.com/"
+                            title="bootstrapmb">Reserved</a></p>
+                </div>
+            </div>
+        </div>
+    </div><!-- copyright end -->
+    <!-- mobile navbar begin -->
+    <div class="mobile-navbar">
+        <ul>
+            <li><a href="#"><img src="../public/assets/img/svg/home.svg" alt=""></a></li>
+            <li><a href="#"><img src="../public/assets/img/svg/lotto.svg" alt=""></a></li>
+            <li><a href="#"><img src="../public/assets/img/svg/ui.svg" alt=""></a></li>
+            <li><a href="#"><img src="../public/assets/img/svg/power-ball.svg" alt=""></a></li>
+            <li><a href="#"><img src="../public/assets/img/svg/user.svg" alt=""></a></li>
+        </ul>
+    </div><!-- mobile navbar end -->
+    <!-- jquery -->
+    <script src="../public/assets/js/jquery.js"></script><!-- proper js -->
+    <script src="../public/assets/js/popper.min.js"></script><!-- bootstrap -->
+    <script src="http://cdn.bootstrapmb.com/bootstrap/4.1.3/js/bootstrap.min.js"></script><!-- owl carousel -->
+    <script src="../public/assets/js/owl.carousel.min.js"></script>
+    <script src="../public/assets/js/owl.carousel2.thumbs.min.js"></script><!-- modal video js -->
+    <script src="../public/assets/js/jquery-modal-video.min.js"></script><!-- filterizr js -->
+    <script src="../public/assets/js/jquery.filterizr.min.js"></script><!-- way poin js-->
+    <script src="../public/assets/js/waypoints.min.js"></script><!-- wow js-->
+    <script src="../public/assets/js/wow.min.js"></script><!-- flgstrap js -->
+    <script src="../public/assets/js/jquery.flagstrap.min.js"></script><!-- vector map js -->
+    <script src="../public/assets/js/jquery-jvectormap-2.0.3.min.js"></script>
+    <script src="../public/assets/js/jquery-jvectormap-world-mill.js"></script>
+    <script src="../public/assets/js/gdp-data.js"></script><!-- niceScroll js -->
+    <script src="../public/assets/js/jquery.nicescroll.min.js"></script><!-- main -->
+    <script src="../public/assets/js/main.js"></script><!-- pick number js -->
+    <script src="../public/assets/js/pick-number.js"></script>
+</body>
+
+</html>

@@ -1,15 +1,7 @@
 //app.js的文件入门启动
 
-//加载web3模块
-const Web3 = require('web3');
-let web3 = new Web3('ws://localhost:8546');
-
-web3.eth.getAccounts().then(console.log);
-web3.eth.getBalance("0xC7bcCb58d8D0a64a364c7e3be3CaBDe5E29A5157")
-.then(console.log);
 
 
-//加载express 模块
 var express = require('express');
 //加载模块处理框架
 var swig = require('swig');
@@ -18,6 +10,143 @@ const { default: mongoose } = require('mongoose');
 
 //加载body-parser,用来处理post提交过来的数据
 var bodyParser = require('body-parser');
+
+ 
+//加载web3模块
+const Web3 = require('web3');
+const web3 = new Web3(Web3.givenProvider || "ws://localhost:7545");
+var Contract = require('web3-eth-contract');
+
+// set provider for all later instances to use
+Contract.setProvider('ws://localhost:8888');
+
+
+
+var subscription = web3.eth.subscribe('logs', {
+    address: '0xF673348BD833f386Ef7a486c88973B0455fE35E0'
+}, function(error, result){
+    if (!error)
+        console.log(result);
+});
+
+const abi = [
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_name",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_sex",
+				"type": "string"
+			},
+			{
+				"internalType": "bool",
+				"name": "_love_state",
+				"type": "bool"
+			}
+		],
+		"name": "create_people",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"stateMutability": "payable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [],
+		"name": "bangding_hash",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "myMap",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "owner",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_name",
+				"type": "string"
+			}
+		],
+		"name": "select_people",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "pure",
+		"type": "function"
+	}
+]
+
+
+
+var myContract = new web3.eth.Contract(abi,'0x14d279c20C285BBd28df95ACE0B827FF3F5F1785');
+
+
+// console.log(myContract);
+// console.log(myContract);
+// console.log(myContract);
+
+
+    // $("#btn_find").click(function(){
+    //     myContract.methods.owner().call().then( function(receipt){
+    //         console.log(receipt);
+    //     });
+    // })
+    
+
 
 //加载cookies模块
 var Cookies = require('cookies');

@@ -3,7 +3,7 @@ var express = require('express');
 var router = express.Router();
 var User = require('../models/User');
 
-
+var kk ;
 //统一返回格式
 
 var responseData;
@@ -30,7 +30,8 @@ router.post('/user/register',function(req, res, next){
     var username =req.body.username;
     var password =req.body.password;
     var repassword= req.body.repassword;
-
+    var account = req.body.account123
+    
     //用户名是否为空
     if(username=='') {
         responseData.code=1;
@@ -45,6 +46,8 @@ router.post('/user/register',function(req, res, next){
         res.json(responseData);
         return;
     }
+    //账户不能为空
+    
     //两次输入的密码必须一直
     if(password != repassword) {
         responseData.code = 3;
@@ -52,6 +55,34 @@ router.post('/user/register',function(req, res, next){
         res.json(responseData);
         return;  
     }
+    if(username.length<=6 || password.length<=6){
+        responseData.code = 6;
+        responseData.message = '用户名或者密码过短,应该超过6位数';
+        res.json(responseData);
+        return;
+    }
+    // if(j.test(username)) {
+    //     responseData.code = 5;
+    //     responseData.message = '用户名只能输入字母或者数字';
+    //     return;
+    // }
+
+    // if(j.test(password)) {
+    //     responseData.code =6;
+    //     responseData.message ='密码只能输入字母或者数字';
+    //     return;
+    // }
+    
+    // if(username.length >= 12){
+    //     responseData.code =7;
+    //     responseData.message ='用户名只能输入字母或者数字';
+    //     return;;
+    // }
+    // if(password.length >= 12){
+    //     responseData.code =8;
+    //     responseData.message ='密码只能输入字母或者数字';
+    //     return;;
+    // }
 
     //用户名是否被注册
     User.findOne({
@@ -67,7 +98,8 @@ router.post('/user/register',function(req, res, next){
         //保存用户的信息到数据库中
         var user = new User({
             username:username,
-            password:password
+            password:password,
+            account:account[0]
         });
         return user.save();
     }).then(function(newUserInfo){
@@ -80,7 +112,10 @@ router.post('/user/register',function(req, res, next){
 router.post('/user/login',function(req, res, next){
     var username =req.body.username;
     var password =req.body.password;
-
+    var account=req.body.account;
+    kk = account;
+    console.log(kk);
+    console.log(account);
     if(username=='' || password=='') {
         responseData.code=1;
         responseData.message='用户名和密码不能为空';
@@ -90,18 +125,20 @@ router.post('/user/login',function(req, res, next){
     //查询数据库中是否已经存在 如果存在则登录成功
     User.findOne({
         username:username,
-        password:password
+        password:password,
+        account:account[0]
     }).then(function(userInfo){
         if(!userInfo){
             responseData.code = 2;
-            responseData.message = '用户名或者密码错误';
+            responseData.message = '用户名,密码或者账号错误';
             res.json(responseData);
             return;
         }
         //用户名和密码正确
         req.cookies.set('userInfo',JSON.stringify({
             _id:userInfo._id,
-            username:userInfo.username
+            username:userInfo.username,
+            account:account
         }));
         responseData.message='登录成功';
         res.json(responseData);
@@ -123,6 +160,7 @@ router.post('/user/find',function(req, res,next){
         }
         responseData.message='成功找到';
         responseData.name=userInfo.username;
+        responseData.account = userInfo.account;
         res.json(responseData);
         return;
 

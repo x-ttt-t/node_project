@@ -1,0 +1,1 @@
+(function(a){a(window).on("scroll",function(){var b=a("#lottery-ticket");var d=a(document).scrollTop();var c=b.offset().top-window.innerHeight;if(d>c){a(".lottery-ticket").addClass("active")}})}(jQuery));
